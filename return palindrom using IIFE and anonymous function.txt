@@ -1,0 +1,46 @@
+
+
+using IIFE
+
+(function(n){
+  let str="";
+  let pal="";
+  for(let i=0;i<n.length;i++){
+      flag=0;
+      str+=n[i];
+      for(j=0;j<str.length;j++){
+          if(str[j]===str[((str.length-1)-j)])
+          {
+              flag++
+          }}
+          if(flag==str.length){
+              pal+=str+" ";
+          }
+          str="";
+  }console.log(pal);
+})
+([1,12,121,141,1221]);
+
+Return all the palindromes in an array:
+
+
+using anonymous
+
+var palindrom=function(n){
+  let str="";
+  let pal="";
+  for(let i=0;i<n.length;i++){
+      flag=0;
+      str+=n[i];
+      for(j=0;j<str.length;j++){
+          if(str[j]===str[((str.length-1)-j)])
+          {
+              flag++
+          }}
+          if(flag==str.length){
+              pal+=str+" ";
+          }
+          str="";
+  }console.log(pal);
+}
+([1,12,121,141,1221]);

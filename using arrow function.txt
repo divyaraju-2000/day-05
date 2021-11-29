@@ -1,0 +1,62 @@
+Do the below programs in arrow functions
+
+//a. Print odd numbers in an array
+       let numberArray = [1, 2, 3, 4, 5, 6, 98, 101, 467]
+
+       let odd=numberArray.filter((x) => {
+
+    return x % 2 !== 0;
+})
+console.log(odd);
+
+//b. Convert all the strings to title caps in a string array
+
+let str = ["Akshay", "is", "a", "smart", "developer"]
+
+ let strCaps = str.map((item) => {
+
+    return item.toUpperCase()
+
+})
+console.log( strCaps)
+
+//c. Sum of all numbers in an array
+
+let n=[1,2,3,4,5];
+
+let sum=n.reduce((pre,curr) => {
+    return pre+curr;
+})
+console.log(sum);
+
+//d. Return all the prime numbers in an array
+
+numberArray=[1,2,3,45,5,7];
+
+    let n=numberArray.filter((item) => {
+
+        for (let i = 2; i < item; i++) {
+            if (item % i === 0)
+                return false;
+        }
+        return item!==1;
+
+    })
+    console.log(`${n}`);
+
+
+//e. Return all the palindromes in an array
+
+let array= [111, 102, 505, 323, 612, 776, 707, 121]
+
+    let pal=array.filter((item) => {
+
+        let temp = item + "";
+
+        if (temp.split('').reverse().join('') === item + "")
+            return true
+
+        return false
+
+    })
+    console.log(pal);

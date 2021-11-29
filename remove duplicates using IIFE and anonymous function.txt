@@ -1,0 +1,47 @@
+g. Remove duplicates from an array
+
+using IIFE
+
+(function(a){
+    let c="";
+  for(let i=0;i<a.length-1;i++){
+      for(let j=i+1;j<a.length;j++){
+          if(a[i]==a[j]){
+            
+             delete(a[j]); 
+          }
+      }
+  }
+         for(let i=0;i<a.length;i++)
+         {
+          if(a[i]%10===Math.floor(a[i]%10)){
+            c+=a[i]+" ";
+          }
+        }
+      
+   console.log(c);
+})
+([1,12,11,3,4,5,12]);
+
+using anonymous
+
+var dup=function(a){
+    let c="";
+  for(let i=0;i<a.length-1;i++){
+      for(let j=i+1;j<a.length;j++){
+          if(a[i]==a[j]){
+            
+             delete(a[j]); 
+          }
+      }
+  }
+         for(let i=0;i<a.length;i++)
+         {
+          if(a[i]%10===Math.floor(a[i]%10)){
+            c+=a[i]+" ";
+          }
+        }
+      
+   return c;
+}
+console.log(dup([1,12,11,3,4,5,12]));

@@ -1,0 +1,33 @@
+	
+1. Do the below programs in anonymous function & IIFE
+a) Print odd numbers in an array using IIFE
+
+(function(a){
+    var  b="";
+    for(i=0;i<a.length;i++)
+    {
+        if(a[i]%2!==0)
+        {
+            b+=a[i]+" "
+        }
+    }
+    console.log(b);
+})([1,2,3,4,5,7]);
+
+
+using anonymous
+
+let odd=function(a)
+{
+    var  b="";
+    for(i=0;i<a.length;i++)
+    {
+        if(a[i]%2!==0)
+        {
+            b+=a[i]+" "
+        }
+    }
+    console.log(b);
+}
+([1,2,3,4,5,7]);
+

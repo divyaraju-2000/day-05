@@ -1,0 +1,56 @@
+f. Return median of two sorted arrays of same size
+
+
+using IIFE:
+
+(function(a,b){
+    var c=[];
+    var n=a.length;
+    var p=b.length;
+    var med=0;
+   
+   for(let i=0;i<n;i++){
+       c.push(a[i]);
+   }
+   for(let j=0;j<p;j++){
+       c.push(b[j]);
+   }
+     if(c.length%2===0)
+     {
+         med=(c[(c.length/2)-1]+c[c.length/2])/2
+     }
+     else
+     {
+         med=c[Math.floor(c.length/2)]
+     }
+      console.log(med);
+    
+})
+([1,2,3,4],[5,6,7,8]);
+
+using anonymous:
+
+var  median=function(a,b){
+    var c=[];
+    var n=a.length;
+    var p=b.length;
+    var med=0;
+   
+   for(let i=0;i<n;i++){
+       c.push(a[i]);
+   }
+   for(let j=0;j<p;j++){
+       c.push(b[j]);
+   }
+     if(c.length%2===0)
+     {
+         med=(c[(c.length/2)-1]+c[c.length/2])/2
+     }
+     else
+     {
+         med=c[Math.floor(c.length/2)]
+     }
+      return med;
+    
+}
+console.log(median([1,2,3,4],[5,6,7,8]));
